@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "balloon-sim-jma"
+version = "0.0.0"
+description = "Space balloon trajectory simulator (Japan) using JMA GSM"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy",
+]
+
+[project.scripts]
+balloon-sim = "balloon_sim.cli.main:app"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.black]
+line-length = 100

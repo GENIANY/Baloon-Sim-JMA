@@ -1,0 +1,23 @@
+﻿name: balloon-sim-jma
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - scipy
+  - pandas
+  - xarray
+  - zarr
+  - numba
+  - pyproj
+  - shapely
+  - rich
+  - typer
+  - pytest
+  - ruff
+  - black
+  - pre-commit
+  # GRIB2 decode (入るならここで)
+  - eccodes
+  - cfgrib

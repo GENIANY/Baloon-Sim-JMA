@@ -1,0 +1,46 @@
+﻿# balloon-sim-jma
+
+Japan-focused space balloon trajectory simulator using JMA GSM (GRIB2).
+
+## Quick start (dev)
+1. Create env: mamba env create -f environment.yml
+2. Activate: conda activate balloon-sim-jma
+3. Install: pip install -e .
+4. Run: alloon-sim --help
+"@ | Set-Content -Encoding utf8 README.md
+
+@"
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+*.so
+
+# venv/conda
+.venv/
+.env/
+conda-bld/
+.mamba/
+*.conda
+*.lock
+
+# tooling
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# editors
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# build
+build/
+dist/
+*.egg-info/

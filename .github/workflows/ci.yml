@@ -1,0 +1,10 @@
+﻿name: ci
+on:
+  push:
+  pull_request:
+
+jobs:
+  placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "CI will be added later"
